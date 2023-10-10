@@ -17,17 +17,19 @@
         padding: 0;
       }
       .left-container {
-        height: 100vh;
+        height: auto;
         display: flex;
         justify-content: center;
         align-items: center;
       }
       .card-left {
         width: 70%;
-        height: 50%;
         background-color: white;
         transform: rotate(-2deg);
         border-radius: 5%;
+        display: flex;
+        flex-direction: column;
+        height: auto;
       }
       .right-container {
         height: 100vh;
@@ -35,15 +37,15 @@
       .card-right {
         width: 90%;
         height: 60%;
-        background-color: white;
         border-radius: 5%;
       }
-
       .col-4 span {
         font-family: Tahoma;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 40px;
         font-family: Blippo, fantasy;
+        text-align: center;
+        justify-content: center;
       }
 
       .col-8 p {
@@ -51,6 +53,14 @@
         display: inline-block;
         font-family: Comic Sans MS, Comic Sans, cursive;
         font-size: 20px;
+        margin: 10px;
+      }
+      .col-9 p {
+        color: white;
+        display: inline-block;
+        font-family: Comic Sans MS, Comic Sans, cursive;
+        font-size: 20px;
+        margin: 10px;
       }
 
       .col-12 span {
@@ -58,6 +68,44 @@
         font-size: 30px;
         color: rgb(208, 208, 208);
       }
+
+      .navimage > img {
+        display: inline-block;
+        width: 30px;
+        margin-left: 10px;
+      }
+
+    .minimal-input {
+      background-color: transparent;
+      border: none;
+      color: #000;
+      font-size: 16px;
+      padding: 10px;
+      outline: none;
+      color: white;
+    }
+
+    .cyberpunk-button {
+      background-color: #00ff00;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      outline: none;
+    }
+    .cyberpunk-button:active {
+      background-color: #00ff00;
+      border: none;
+      color: #000;
+      padding: 10px 20px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      outline: none;
+      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+    }
     </style>
   </head>
   <body>
@@ -69,27 +117,27 @@
             <!--  -->
             <div class="row">
               <!--  -->
-              <div class="col-4 h-20 w-100">
-                <img
-                  src="./point.png"
-                  alt=""
-                  class="w-25"
-                  style="width: 70px; display: inline-block"
-                />
-                <span>BiliBiliCoveracquisition</span>
+              <div class="col-4 h-10 w-100">
+                <div class="navimage">
+                  <span> ContactME</span>
+                  <img src="./point.png" alt="" class="w-25" />
+                  <img src="./bilibili.png" alt="" />
+                  <img src="./即刻.png" alt="" />
+                  <img src="./twitter.png" alt="" />
+                </div>
               </div>
               <!--  -->
-              <div class="col-8 text-white h-40 w-100">
+              <div class="col-8 text-white h-20 w-100">
                 <p>
-                  "This page is about the application of getting the video cover
-                  of
+                  'Forget that there are places in the world that aren't made
+                  out of stone.
                   <img
                     src="./b.png"
                     alt=""
                     style="width: 30px; display: inline-block"
                   />
-                  You can enter the link of the video and click here to get the
-                  cover you like."
+                  There's something inside that they can't get yo that they
+                  can't touch.That's yours.''
                 </p>
               </div>
               <!--  -->
@@ -97,8 +145,13 @@
                 class="col-12 h-40 w-100 d-flex justify-content-center align-items-center ml-5"
               >
                 <div class="row justify-content-center align-items-center">
-                  <img src="./icon.png" alt="" class="w-25" />
                   <div class="d-flex flex-column align-items-center">
+                    <img
+                      src="./icon.png"
+                      alt=""
+                      class="w-25"
+                      style="display: inline-block"
+                    />
                     <span>Hi ~ I'm Catslin</span>
                   </div>
                 </div>
@@ -116,38 +169,27 @@
           <div class="card-right">
             <!--  -->
             <div
-              class="col-4 h-20 w-100 bg-danger d-flex justify-content-center align-items-center"
+              class="col-4 h-20 w-100 bg-black d-flex justify-content-center align-items-center"
             >
               <span style="color: aliceblue; font-family: Stencil Std, fantasy"
                 >BiliBiliCoveracquisition</span
               >
             </div>
             <!--  -->
-            <div class="col-8 h-40 w-100">
+            <div class="col-9 h-40 w-100">
               <br />
               <p>
-                "You can enter the link of the video and click here to get the
-                cover you like."
+                Enter the sharing link or bv number of BV, click submit and you will get the cover of the video on the left
               </p>
             </div>
             <!--  -->
             <div class="col-12 h-40 w-100">
-              <div class="mb-1">
-                <!-- <label for="basic-url" class="form-label"
-                  >INPUT YOUR URL</label
-                > -->
-                <div class="input-group">
-                  <span class="input-group-text" id="basic-addon3"
-                    >INPUT YOUR URL</span
-                  >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="basic-url"
-                    aria-describedby="basic-addon3"
-                  />
-                </div>
-              </div>
+                <div class="row justify-content-center mt-5">
+                    <div class="col-6">
+                        <input type="text" class="minimal-input" placeholder="Enter your text...">
+                      <button class="cyberpunk-button">Submit</button>
+                    </div>
+                  </div>
             </div>
           </div>
         </div>
