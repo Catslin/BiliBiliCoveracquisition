@@ -3,22 +3,30 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="referrer" content="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 引入 Bootstrap 的 CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
+      integrity="sha384-Q1jzZoM0VfKb9GzRjKt2+8pO6s8rBpUJqkq8/ahg/jrWz1Dn5t3K4Jl2z0m+KtzO"
+      crossorigin="anonymous"
+    />
     <title>Bilibili封面获取页面 🍻</title>
     <style>
-      body {
-        background-color: #f5f5f5;
+      .container {
+        max-width: 100vh;
+        margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
       }
       h1 {
-        margin-top: 50px;
         font-size: 36px;
         font-weight: bold;
         color: #333;
       }
       form {
-        margin-top: 50px;
         display: inline-block;
         text-align: left;
       }
@@ -53,32 +61,47 @@
       }
       .cover {
         margin-top: 50px;
-        max-width: 500px;
-        height: 300px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        margin-left: 35%;
+        width: 100%;
+        height: 0;
+        padding-bottom: 56.25%; /* 16:9 宽高比 */
+        position: relative;
       }
 
       .cover img {
-        max-width: 100%;
-        max-height: 100%;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (max-width: 991.98px) {
+        /* 在小屏幕尺寸下隐藏label */
+        label[for="path"] {
+          display: none;
+        }
+      }
+
+      @media (min-width: 992px) {
+        /* 在大屏幕尺寸下显示label */
+        label[for="path"] {
+          display: inline-block;
+        }
       }
     </style>
   </head>
   <body>
-    <h1>Bilibili封面获取页面 🍻</h1>
-    <form action="/getcover" method="post">
-      <label for="path">请输入视频链接 :</label>
-      <input type="text" id="path" name="path" required />
-      <input type="submit" value="获取封面" />
-    </form>
-    <div class="cover">
-      <img id="cover-img" src="" alt="封面图片" />
+    <div class="container">
+      <h1>Bilibili封面获取页面 🍻</h1>
+      <form action="/getcover" method="post">
+        <label for="path" class="d-none d-lg-block">请输入视频链接 :</label>
+        <input type="text" id="path" name="path" required />
+        <input type="submit" value="获取封面" />
+      </form>
+      <div class="cover">
+        <img src="<%= aidPath %>"/>
+      </div>
     </div>
-
-    <%= aidPath %>
   </body>
 </html>
