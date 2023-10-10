@@ -1,0 +1,27 @@
+<style>
+    .card {
+      width: 300px;
+      height: 200px;
+      background-color: lightgray;
+      opacity: 1;
+      transition: opacity 0.5s;
+    }
+    
+    .hidden {
+      opacity: 0;
+    }
+    </style>
+    
+    <div class="card">
+      <p>Card 1</p>
+      <button id="switch">Switch</button>
+    </div>
+    
+    <script>
+    const card = document.querySelector(".card");
+    const switchBtn = document.querySelector("#switch");
+    
+    switchBtn.addEventListener("click", function() {
+      card.classList.toggle("hidden");
+    });
+    </script>
