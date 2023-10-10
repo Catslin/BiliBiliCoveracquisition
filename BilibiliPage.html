@@ -46,6 +46,9 @@
         font-family: Blippo, fantasy;
         text-align: center;
         justify-content: center;
+        text-decoration: underline;
+        font-weight: bold;
+        border-bottom: 4px dotted red;
       }
 
       .col-8 p {
@@ -69,43 +72,44 @@
         color: rgb(208, 208, 208);
       }
 
-      .navimage > img {
+      .navimage > a > img {
         display: inline-block;
         width: 30px;
         margin-left: 10px;
       }
 
-    .minimal-input {
-      background-color: transparent;
-      border: none;
-      color: #000;
-      font-size: 16px;
-      padding: 10px;
-      outline: none;
-      color: white;
-    }
+      .minimal-input {
+        background-color: transparent;
+        border: none;
+        color: #000;
+        font-size: 16px;
+        padding: 10px;
+        outline: none;
+        color: white;
+      }
 
-    .cyberpunk-button {
-      background-color: #00ff00;
-      border: none;
-      color: #000;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      outline: none;
-    }
-    .cyberpunk-button:active {
-      background-color: #00ff00;
-      border: none;
-      color: #000;
-      padding: 10px 20px;
-      font-size: 16px;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      outline: none;
-      box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
-    }
+      .cyberpunk-button {
+        background-color: #00ff00;
+        border: none;
+        color: #000;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        outline: none;
+      }
+      .cyberpunk-button:active {
+        background-color: #00ff00;
+        border: none;
+        color: #000;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        outline: none;
+        box-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00,
+          0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 60px #00ff00, 0 0 70px #00ff00;
+      }
     </style>
   </head>
   <body>
@@ -121,9 +125,20 @@
                 <div class="navimage">
                   <span> ContactME</span>
                   <img src="./point.png" alt="" class="w-25" />
-                  <img src="./bilibili.png" alt="" />
-                  <img src="./即刻.png" alt="" />
-                  <img src="./twitter.png" alt="" />
+                  <a
+                    href="https://space.bilibili.com/622911789?spm_id_from=333.1007.0.0"
+                    target="_blank"
+                    ><img src="./bilibili.png" alt=""
+                  /></a>
+                  <a href="https://jike.city/npc" target="_blank"
+                    ><img src="./即刻.png" alt=""
+                  /></a>
+                  <a href="https://twitter.com/MccrispyXoxo" target="_blank"
+                    ><img src="./twitter.png" alt=""
+                  /></a>
+                  <a href="https://user.qzone.qq.com/3368939477" target="_blank"
+                    ><img src="./qq.png" alt=""
+                  /></a>
                 </div>
               </div>
               <!--  -->
@@ -179,17 +194,22 @@
             <div class="col-9 h-40 w-100">
               <br />
               <p>
-                Enter the sharing link or bv number of BV, click submit and you will get the cover of the video on the left
+                Enter the sharing link or number of BV, click submit and you
+                will get the cover of the video on the left
               </p>
             </div>
             <!--  -->
             <div class="col-12 h-40 w-100">
-                <div class="row justify-content-center mt-5">
-                    <div class="col-6">
-                        <input type="text" class="minimal-input" placeholder="Enter your text...">
-                      <button class="cyberpunk-button">Submit</button>
-                    </div>
-                  </div>
+              <div class="row justify-content-center mt-5">
+                <div class="col-6">
+                  <input
+                    type="text"
+                    class="minimal-input"
+                    placeholder="Enter your text..."
+                  />
+                  <button class="cyberpunk-button">Submit</button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
