@@ -5,103 +5,157 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="referrer" content="no-referrer" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- 引入 Bootstrap 的 CSS -->
+    <title></title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/5.0.2/css/bootstrap.min.css"
-      integrity="sha384-Q1jzZoM0VfKb9GzRjKt2+8pO6s8rBpUJqkq8/ahg/jrWz1Dn5t3K4Jl2z0m+KtzO"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <title>Bilibili封面获取页面 🍻</title>
-    <style>
-      .container {
-        max-width: 100vh;
-        margin: 0 auto;
-        font-family: Arial, Helvetica, sans-serif;
-        text-align: center;
-      }
-      h1 {
-        font-size: 36px;
-        font-weight: bold;
-        color: #333;
-      }
-      form {
-        display: inline-block;
-        text-align: left;
-      }
-      label {
-        margin-bottom: 10px;
-        font-size: 18px;
-        color: #666;
-      }
-      input[type="text"] {
-        width: 300px;
-        height: 20px;
-        padding: 10px;
-        font-size: 16px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        outline: none;
-      }
-      input[type="submit"] {
-        width: 120px;
-        height: 40px;
-        margin-top: 20px;
-        font-size: 16px;
-        font-weight: bold;
-        color: #fff;
-        background-color: #333;
-        border: none;
-        border-radius: 5px;
-        cursor: pointer;
-      }
-      input[type="submit"]:hover {
-        background-color: #666;
-      }
-      .cover {
-        margin-top: 50px;
-        width: 100%;
-        height: 0;
-        padding-bottom: 56.25%; /* 16:9 宽高比 */
-        position: relative;
-      }
-
-      .cover img {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      @media (max-width: 991.98px) {
-        /* 在小屏幕尺寸下隐藏label */
-        label[for="path"] {
-          display: none;
-        }
-      }
-
-      @media (min-width: 992px) {
-        /* 在大屏幕尺寸下显示label */
-        label[for="path"] {
-          display: inline-block;
-        }
-      }
-    </style>
+    <link rel="stylesheet" href="style/style.css" />
   </head>
+
   <body>
-    <div class="container">
-      <h1>Bilibili封面获取页面 🍻</h1>
-      <form action="/getcover" method="post">
-        <label for="path" class="d-none d-lg-block">请输入视频链接 :</label>
-        <input type="text" id="path" name="path" required />
-        <input type="submit" value="获取封面" />
-      </form>
-      <div class="cover">
-        <img src="<%= aidPath %>"/>
+    <div class="container-fluid">
+      <div class="row">
+        <!--  -->
+        <div class="col-md-6 left-container">
+          <div class="card card-left">
+            <!--  -->
+            <div class="row">
+              <!--  -->
+              <div class="col-4 h-10 w-100">
+                <div class="navimage">
+                  <span> ContactME</span>
+                  <img src="image/point.png" alt="" class="w-25" />
+                  <a
+                    href="https://space.bilibili.com/622911789?spm_id_from=333.1007.0.0"
+                    target="_blank"
+                    ><img src="image/bilibili.png" alt=""
+                  /></a>
+                  <a href="https://jike.city/npc" target="_blank"
+                    ><img src="image/即刻.png" alt=""
+                  /></a>
+                  <a href="https://twitter.com/MccrispyXoxo" target="_blank"
+                    ><img src="image/twitter.png" alt=""
+                  /></a>
+                  <a href="https://user.qzone.qq.com/3368939477" target="_blank"
+                    ><img src="image/qq.png" alt=""
+                  /></a>
+                </div>
+              </div>
+              <!--  -->
+              <div class="col-8 text-white h-20 w-100">
+                <p>
+                  'Forget that there are places in the world that aren't made
+                  out of stone.
+                  <img
+                    src="image/b.png"
+                    alt=""
+                    style="width: 30px; display: inline-block"
+                  />
+                  There's something inside that they can't get yo that they
+                  can't touch.That's yours.''
+                </p>
+              </div>
+              <!--  -->
+              <div
+                class="col-12 h-40 w-100 d-flex justify-content-center align-items-center ml-5"
+              >
+                <div class="row justify-content-center align-items-center">
+                  <div class="d-flex flex-column align-items-center">
+                    <img
+                      src="image/icon.png"
+                      alt=""
+                      class="w-25"
+                      style="display: inline-block"
+                    />
+                    <span>Hi ~ I'm Catslin</span>
+                  </div>
+                </div>
+              </div>
+              <!--  -->
+            </div>
+            <!--  -->
+          </div>
+
+          <div class="card-check" id="checkContent" style="height: auto">
+            <figure
+              class="figure"
+              style="margin: 5px;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 100;"
+            align-items: center; / 设置垂直居中 /
+            >
+              <% if (aidPath) { %>
+              <img src="<%= aidPath %>" class="figure-img img-fluid rounded" />
+              <% } else { %>
+              <img
+                src="image/bktest.jpg"
+                class="figure-img img-fluid rounded"
+              />
+              <% } %>
+              <figcaption class="figure-caption">
+                <p class="imageText">
+                  Long press or right mouse button to save
+                </p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!--  -->
+        <div
+          class="col-md-6 right-container d-flex justify-content-center align-items-center"
+        >
+          <div class="card-right">
+            <!--  -->
+            <div
+              class="col-4 h-20 w-100 bg-black d-flex justify-content-center align-items-center"
+            >
+              <span style="color: aliceblue; font-family: Stencil Std, fantasy"
+                >BiliBiliCoveracquisition</span
+              >
+            </div>
+            <!--  -->
+            <div class="col-9 h-40 w-100">
+              <br />
+              <p>
+                Enter the sharing link or number of BV, click submit and you
+                will get the cover of the video on the left
+              </p>
+            </div>
+            <!--  -->
+            <div class="col-12 h-40 w-100">
+              <div class="row justify-content-center mt-5">
+                <div class="col-6">
+                  <form action="/getcover" method="post">
+                    <input
+                      required
+                      type="text"
+                      name="path"
+                      class="minimal-input"
+                      placeholder="Enter your url..."
+                      title="何もない"
+                    />
+                    <button
+                      id="checkBtn"
+                      type="submit"
+                      class="cyberpunk-button"
+                      onclick="rotateCard()"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>
+  <script src="js/manage.js"></script>
 </html>
