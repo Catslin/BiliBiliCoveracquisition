@@ -20,5 +20,3 @@ function rotateCard() {
     cardLeft.style.transform = "rotate(0deg)";
   }, 250);
 }
-
-rotateCard();
