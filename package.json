@@ -7,6 +7,9 @@
     "start": "node app.js -p $PORT",
     "build": "echo 'This app does not require a build step.'"
   },
+  "engines": {
+    "node": "14.x"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
