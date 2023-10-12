@@ -4,7 +4,8 @@
   "description": "Quickly get the cover of Station Bilibili",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js -p $PORT",
+    "build": "echo 'This app does not require a build step.'"
   },
   "keywords": [],
   "author": "",
