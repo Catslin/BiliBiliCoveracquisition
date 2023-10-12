@@ -31,4 +31,6 @@ app.post("/getcover", (req, res) => {
   }
 });
 
-module.exports = app;
+// connection
+const port = process.env.PORT || 5000;
+app.listen(port, () => console.log(`Listening to port ${port}`));
