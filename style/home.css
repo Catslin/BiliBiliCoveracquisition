@@ -102,6 +102,12 @@ body {
 .box11:hover .box3 {
     transform: rotateY(360deg);
 }
+.rotate-90 {
+  transform: rotateY(90deg);
+}
+.rotate-360 {
+  transform: rotateY(360deg);
+}
 
 .box3 {
   background-color: white;
@@ -109,7 +115,7 @@ body {
   height: 60%;
   transform: rotate(-2deg);
   position: absolute;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -119,6 +125,7 @@ body {
 
 .box3 > img {
   width: 90%;
+  height: 60%;
   border: 5px black solid;
 }
 
@@ -180,6 +187,7 @@ body {
   outline: none;
 }
 
+
 /* 媒体查询 */
 @media (max-width: 768px) {
   .box1 {
@@ -191,4 +199,8 @@ body {
     width: 100%;
     height: 100vh;
   }
+  .box11 {
+    display: none;
+  }
+  
 }
