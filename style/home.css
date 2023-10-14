@@ -62,19 +62,15 @@ body {
   font-family: Comic Sans MS, Comic Sans, cursive;
 }
 .box212 {
-  flex-grow: 7;
+  flex-grow: 8;
   height: 100%;
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .box212 > a > img {
   width: 30px;
   margin: 10px;
-}
-.box213 {
-  flex-grow: 2;
-  height: 100%;
-  display: flex;
 }
 
 .box22 {
