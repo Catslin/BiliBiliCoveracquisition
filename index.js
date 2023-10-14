@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const bodyParser = require("body-parser");
-const fetch = require("node-fetch")
 
 app.set("view engine", "ejs");
 app.use(express.static("public"));
