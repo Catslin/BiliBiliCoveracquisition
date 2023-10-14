@@ -191,9 +191,6 @@ body {
 @media (max-width: 768px) {
   .box1-card {
     width: 100%;
-    height: 100vh;
-  }
-  .box11 {
     height: auto;
   }
   
