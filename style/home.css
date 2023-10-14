@@ -183,7 +183,7 @@ body {
 /* 媒体查询 */
 @media (max-width: 768px) {
   .box2 {
-    width: 100%;
+    width: 90%;
   }
   .box1 {
     flex-direction: column;
