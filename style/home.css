@@ -67,7 +67,7 @@ body {
   display: flex;
   justify-content: flex-start;
 }
-.box212 > img {
+.box212 > a > img {
   width: 30px;
   margin: 10px;
 }
