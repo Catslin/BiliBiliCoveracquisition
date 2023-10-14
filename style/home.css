@@ -125,7 +125,6 @@ body {
 
 .box3 > img {
   width: 90%;
-  height: 60%;
   border: 5px black solid;
 }
 
@@ -190,11 +189,6 @@ body {
 
 /* 媒体查询 */
 @media (max-width: 768px) {
-  .box1 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
   .box1-card {
     width: 100%;
     height: 100vh;
