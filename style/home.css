@@ -112,26 +112,26 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
+  overflow: hidden;
   z-index: 1;
-  transition: transform 0.3s ease;
 }
 
 .box5 {
   position: absolute;
   width: 90%;
   height: 70%;
-  transition: transform 0.5s ease;
 }
 .box5 > img {
   width: 100%;
 }
-.box5 > span {
+.box6 {
   display: flex;
   justify-content: center;
-  align-items: center;
-  font-family: Arial Narrow, sans-serif;
+  font-family: Bradley Hand, cursive;
   font-size: 20px;
+  position: absolute;
+  font-size: 30px;
+  margin-top: 50%;
 }
 
 /* .box12:hover .box4 {
@@ -150,7 +150,7 @@ body {
   font-family: Impact, fantasy;
 }
 .box42 {
-  flex-grow: 4;
+  flex-grow: 3;
   font-family: Chalkduster, fantasy;
   font-size: 20px;
   display: flex;
