@@ -194,7 +194,7 @@ body {
     height: 100vh;
   }
   .box11 {
-    display: none;
+    height: auto;
   }
   
 }
