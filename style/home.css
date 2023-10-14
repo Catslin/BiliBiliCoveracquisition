@@ -185,3 +185,12 @@ body {
   border: none;
   outline: none;
 }
+
+
+/* 媒体查询 */
+@media (max-width: 768px) {
+  .box1-card {
+    width: 100%;
+    height: auto;
+  }
+}
