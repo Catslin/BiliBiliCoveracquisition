@@ -159,16 +159,17 @@ body {
   font-size: 30px;
   color: deeppink;
   height: 30px;
-  width: 50%;
+  width: 80%;
   border: none;
+  font-family: Marker Felt, fantasy;
   outline: none;
   border-bottom: 3px black solid;
-  font-family: Jazz LET, fantasy;
   background-color: transparent; /* 使用rgba()设置背景颜色和透明度 */
 }
 
 .box43 > input::placeholder {
   color: rgb(232, 197, 197);
+  font-family: Jazz LET, fantasy;
 }
 
 .box43 > button {
@@ -197,8 +198,5 @@ body {
 
   .box43 > input {
     font-size: 20px;
-  }
-  .box43 > button {
-    font-size: 15px;
   }
 }
