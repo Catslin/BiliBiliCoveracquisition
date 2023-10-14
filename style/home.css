@@ -140,6 +140,7 @@ body {
   font-family: Impact, fantasy;
 }
 .box42 {
+  color: mediumturquoise;
   flex-grow: 3;
   font-family: Chalkduster, fantasy;
   font-size: 20px;
@@ -147,6 +148,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  z-index: 5;
 }
 .box43 {
   flex-grow: 2;
@@ -159,7 +161,7 @@ body {
   font-size: 30px;
   color: deeppink;
   height: 30px;
-  width: 80%;
+  width: 70%;
   border: none;
   font-family: Marker Felt, fantasy;
   outline: none;
