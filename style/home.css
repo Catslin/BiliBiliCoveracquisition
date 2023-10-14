@@ -33,7 +33,6 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  display: inline-block;
   border: 2px black solid;
   background-color: white;
   border-radius: 5%;
@@ -96,49 +95,52 @@ body {
   font-family: Comic Sans MS, Comic Sans, cursive;
   color: white;
 }
-
-.box11:hover .box2{
-    transform: rotateY(90deg);
-}
-.box11:hover .box3 {
-    transform: rotateY(360deg);
-}
-
-.box3 {
-  background-color: white;
-  width: 70%;
-  height: 60%;
-  transform: rotate(-2deg);
-  position: absolute;
-  transition: transform 1s ease;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5%;
-}
-
-.box3 > img {
-  width: 90%;
-  border: 5px black solid;
-}
-
 .box12 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .box4 {
+  color: white;
+  position: absolute;
   width: 100%;
-  height: 50%;
+  height: 70%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  z-index: 1;
+  transition: transform 0.3s ease;
 }
+
+.box5 {
+  position: absolute;
+  width: 90%;
+  height: 70%;
+  transition: transform 0.5s ease;
+}
+.box5 > img {
+  width: 100%;
+}
+.box5 > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial Narrow, sans-serif;
+  font-size: 20px;
+}
+
+/* .box12:hover .box4 {
+  transform: rotateY(90deg);
+}
+.box12:hover .box5 {
+  transform: rotate(-2deg);
+  transform: rotateY(360deg);
+} */
 
 .box41 {
   flex-grow: 1;
@@ -172,6 +174,7 @@ body {
   outline: none;
   border-bottom: 3px black solid;
   font-family: Jazz LET, fantasy;
+  background-color: transparent; /* 使用rgba()设置背景颜色和透明度 */
 }
 .box43 > button {
   font-family: Jazz LET, fantasy;
@@ -181,8 +184,6 @@ body {
   border: none;
   outline: none;
 }
-
-
 
 /* 媒体查询 */
 @media (max-width: 768px) {
