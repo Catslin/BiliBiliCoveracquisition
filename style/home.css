@@ -44,6 +44,7 @@ body {
 }
 
 .box3 {
+  z-index: 10;
   position: absolute;
   width: 70%;
   height: 60%;
@@ -155,13 +156,7 @@ body {
 .box5 > img {
   width: 100%;
 }
-.box11:hover .box2 {
-  transform: rotateX(90deg);
-}
-.box11:hover .box3 {
-  transform: rotate(-2deg);
-  transform: rotate(360deg);
-}
+
 
 .box41 {
   flex-grow: 1;
@@ -218,11 +213,19 @@ body {
 .submit:hover {
   -webkit-text-stroke: 2px white;
 }
-
+/* 
 .submit:active {
   -webkit-text-stroke: 0px;
-}
+} */
 
+/* .box11:hover .box2 {
+  transform: rotateX(90deg);
+}
+.box11:hover .box3 {
+  transform: rotate(-2deg);
+  transform: rotate(360deg);
+}
+ */
 
 /* 媒体查询 */
 @media (max-width: 768px) {
@@ -240,6 +243,7 @@ body {
   }
   .box3 {
     width: 90%;
+    height: 60%;
   }
   .box12 {
     width: 100%;
