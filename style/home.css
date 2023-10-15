@@ -57,12 +57,10 @@ body {
   border: 2px solid black;
   background-color: white;
   border-radius: 5%;
-  z-index: 10 ;
   background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZOncveGN7hlClvKc3FxSIuFUw33wdc8agA&usqp=CAUhttps://bpic.51yuansu.com/pic3/cover/04/02/48/6015175e7be83_610.jpg);
 }
 
 .img-text {
-  background-color: red;
   flex-grow: 0.5;
   width: 100%;
   display: flex;
