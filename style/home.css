@@ -198,7 +198,7 @@ body {
   font-size: 20px;
   color: deeppink;
   height: 30px;
-  width: 80%;
+  width: 90%;
   border: none;
   font-family: Marker Felt, fantasy;
   display: flex;
@@ -217,7 +217,7 @@ body {
 .box43 > button {
   font-family: Jazz LET, fantasy;
   color: deeppink;
-  font-size: 30px;
+  font-size: 25px;
   background: none;
   border: none;
   outline: none;
