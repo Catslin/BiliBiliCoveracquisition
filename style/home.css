@@ -5,8 +5,10 @@ body {
 
 .box1 {
   width: 100%;
+  height: 100vh;
   display: flex;
-  justify-content: stretch;
+  justify-content: center;
+  align-items: center;
   flex-grow: 1; /* 让box1占据剩余的可用空间 */
 }
 
@@ -16,6 +18,8 @@ body {
 }
 
 .box11 {
+  width: 50%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,7 +29,7 @@ body {
 .box2 {
   overflow: auto;
   width: 70%;
-  height: 60%;
+  height: 63%;
   transform: rotate(-2deg);
   position: absolute;
   transition: transform 0.3s ease;
@@ -37,6 +41,27 @@ body {
   background-color: white;
   border-radius: 5%;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.555); /* 添加阴影效果 */
+}
+
+.box3 {
+  position: absolute;
+  width: 70%;
+  height: 60%;
+  overflow: hidden;
+  transition: transform 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  border: 2px solid black;
+  background-color: white;
+  border-radius: 5%;
+}
+
+.box3 > img {
+  position: relative;
+  top: 5%;
+  width: 90%;
+  border: 10px black solid;
 }
 
 .box2 > * {
@@ -96,6 +121,8 @@ body {
   color: white;
 }
 .box12 {
+  width: 50%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -121,17 +148,20 @@ body {
   width: 90%;
   height: 70%;
   transition: transform 1s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .box5 > img {
   width: 100%;
 }
-/* .box12:hover .box4 {
-  transform: rotateY(90deg);
+.box11:hover .box2 {
+  transform: rotateX(90deg);
 }
-.box12:hover .box5 {
+.box11:hover .box3 {
   transform: rotate(-2deg);
-  transform: rotateY(360deg);
-} */
+  transform: rotate(360deg);
+}
 
 .box41 {
   flex-grow: 1;
@@ -139,6 +169,7 @@ body {
   display: flex;
   text-align: center;
   font-family: Impact, fantasy;
+  color: black;
 }
 .box42 {
   color: mediumturquoise;
@@ -195,20 +226,25 @@ body {
 
 /* 媒体查询 */
 @media (max-width: 768px) {
-  .box2 {
-    width: 95%;
-  }
   .box1 {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
-  .box1-card {
+  .box11 {
     width: 100%;
-    height: 100vh;
+    height: 50%;
+    align-items: flex-end;
   }
-
-  .box43 > input {
-    font-size: 15px;
+  .box2 {
+    width: 90%;
+    height: 90%;
+  }
+  .box12 {
+    width: 100%;
+    height: 50%;
+    align-items: flex-start;
+  }
+  .box4 {
+    width: 90%;
+    height: 90%;
   }
 }
