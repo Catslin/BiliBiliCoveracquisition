@@ -44,7 +44,6 @@ body {
 }
 
 .box3 {
-  z-index: 10;
   position: absolute;
   width: 70%;
   height: 60%;
@@ -218,14 +217,14 @@ body {
   -webkit-text-stroke: 0px;
 } */
 
-/* .box11:hover .box2 {
+.box11:hover .box2 {
   transform: rotateX(90deg);
 }
 .box11:hover .box3 {
   transform: rotate(-2deg);
   transform: rotate(360deg);
 }
- */
+
 
 /* 媒体查询 */
 @media (max-width: 768px) {
@@ -235,7 +234,7 @@ body {
   .box11 {
     width: 100%;
     height: 50%;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   .box2 {
     width: 90%;
