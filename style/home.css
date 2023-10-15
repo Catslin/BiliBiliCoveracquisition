@@ -27,6 +27,7 @@ body {
 }
 
 .box2 {
+  background-image: url(https://pic.nximg.cn/file/20230127/4471983_183526624123_2.jpg);
   overflow: auto;
   width: 70%;
   height: 63%;
@@ -50,18 +51,30 @@ body {
   overflow: hidden;
   transition: transform 1s ease;
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   border: 2px solid black;
   background-color: white;
   border-radius: 5%;
+  z-index: 10 ;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkZOncveGN7hlClvKc3FxSIuFUw33wdc8agA&usqp=CAUhttps://bpic.51yuansu.com/pic3/cover/04/02/48/6015175e7be83_610.jpg);
+}
+
+.img-text {
+  background-color: red;
+  flex-grow: 0.5;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box3 > img {
   position: relative;
   top: 5%;
   width: 90%;
-  border: 10px black solid;
+  border: 5px white solid;
 }
 
 .box2 > * {
@@ -116,7 +129,7 @@ body {
 }
 .box23 > span {
   font-size: 20px;
-  background-color: aquamarine;
+  background-color: gray;
   font-family: Comic Sans MS, Comic Sans, cursive;
   color: white;
 }
@@ -209,21 +222,21 @@ body {
   outline: none;
 }
 
-.submit:hover {
+/* .submit:hover {
   -webkit-text-stroke: 2px white;
-}
+} */
 /* 
 .submit:active {
   -webkit-text-stroke: 0px;
 } */
 
-.box11:hover .box2 {
+/* .box11:hover .box2 {
   transform: rotateX(90deg);
 }
 .box11:hover .box3 {
   transform: rotate(-2deg);
   transform: rotate(360deg);
-}
+} */
 
 
 /* 媒体查询 */
